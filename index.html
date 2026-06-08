@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRONEXT</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link href="https://googleapis.com/css2?family=Poppins:wght@700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+
+    <h1 class="tituloc" id="titulo"> AGRONEXT </h1>
+    <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-delay="300"
+     data-aos-easing="ease-in-sine">
+    <p class="sub">A evolução da produção na era do impacto zero</p>
+    </div>
+    </header>
+<div class="imagem">
+<img src="Drone.png"  class="drone" alt="">
+</div>
+<div class="caixa">
+    <div class="c1">
+    <div class="card">
+<span class="tech"> AGROTECH </span>
+<h2>IA reduz em até 40% o uso de água no PR</h2>
+<p class="resumo">Sensores conectados monitorom o solo em tempo real...</p>
+    <div class="conteudocomp">
+        <p>Um projeto-piloto no oeste do Paraná utiliza inteligência artificial e sensores IoT para otimizar a irrigação de soja e milho. O sistema automatizado reduz em até 40% o consumo hídrico e 25% na energia, sendo expandido para Mato Grosso e Rio Grande do Sul.</p>
+    </div>
+    <button class="botaoler" onclick="alterna(this)">Ler Notícia Completa</button>
+    </div>
+    </div>
+    <div class="c2">
+    <div class="card">
+<span class="sustentabilidade"> SUSTENTABILIDADE</span>
+<h2>Tratores elétricos e biometano ganham força no campo</h2>
+<p class="resumo">Modelos reduzem a emissão de carbono a zero aproveitando resíduos da própria fazenda...</p>
+    <div class="conteudocomp">
+        <p>A transição energética no agro brasileiro promove o uso de tratores a biometano e elétricos, reaproveitando resíduos orgânicos para gerar energia limpa. Essa prática de economia circular elimina custos com combustíveis fósseis e melhora a eficiência e sustentabilidade no campo.</p>
+    </div>
+    <button class="botaoler" onclick="alterna(this)">Ler Notícia Completa</button>
+    </div>
+    </div>
+    <div class="c3">
+       <div class="card">
+<span class="bioeconomia"> BIOECONOMIA </span>
+<h2>Sensores de baixo custo feitos com material reciclado ajudam pequenos produtores</h2>
+<p class="resumo">Alunos de escolas públicas criam dispositivos com Arduino para monitorar estufas hortaliças...</p>
+    <div class="conteudocomp">
+        <p>Estudantes de escolas públicas criaram sensores de monitoramento de baixo custo, utilizando materiais recicláveis e tecnologia acessível para pequenos agricultores. Esses dispositivos, via aplicativos de mensagem, ajudam no manejo, controle de pragas e aumento da produtividade.</p>
+    </div>
+    <button class="botaoler" onclick="alterna(this)">Ler Notícia Completa</button>
+       </div>
+    </div>
+<div class="quiz"> 
+    <h1 class="tituloq"> Teste seu conhecimento </h1>
+    <p class="pergunta" data-aos="zoom-in-up">Qual é a principal vantagem do uso de tratores elétricos e a biometano no campo?</p>
+    <div class="alter" data-aos="zoom-in-up" data-aos-delay="200">
+        <button id="resp" class="opção" onclick="responder(this, 'a')"> Reduzem a emissão de carbono a zero</button>
+        <button id="resp" class="opção" onclick="responder(this, 'b')">Aumentam o consumo de água</button>
+        <button id="resp" class="opção" onclick="responder(this, 'c')">São mais baratos que os tratores convencionais</button>
+        <button id="resp" class="opção" onclick="responder(this, 'd')">Funcionam apenas durante o dia</button>
+        
+
+</div>
+<div class="explicacao" style="display: none;">
+<p class="acert">Acertou!</p>
+
+   <h3 class="Texp">Os tratores elétricos e a biometano eliminam o uso de combustíveis fósseis, promovendo uma agricultura mais sustentável e eficiente. Melhorando a produtividade e reduzindo os impactos ambientais.</h3></div>
+    </div>
+    <div class="expe" style="display: none;">
+        <p class="errou">Errou!</p>
+        <h3 class="Texpe">A resposta correta é a letra A. Os tratores elétricos e a biometano eliminam o uso de combustíveis fósseis, promovendo uma agricultura mais sustentável e eficiente. Melhorando a produtividade e reduzindo os impactos ambientais.</h3>
+    </div>
+    <section class="MitoF" data-aos="fade-up">
+    <h2 class="Tmito">Mitos vs Fatos no Agro Moderno</h2>
+    
+    <div class="gridMF">
+        <div class="cardM">
+            <div class="blocomito">
+                <span class="etiMi">MITO</span>
+                <p>A tecnologia afasta as novas gerações e os jovens do trabalho no campo.</p>
+            </div>
+            <div class="blocofato">
+                <span class="etiFa">FATO</span>
+                <p>A digitalização atrai os jovens, transformando o agro em um setor conectado, tecnológico e cheio de oportunidades de carreira técnica.</p>
+            </div>
+        </div>
+
+        <div class="cardM">
+            <div class="blocomito">
+                <span class="etiMi">MITO</span>
+                <p>Tratores e máquinas agrícolas sempre serão grandes poluidores devido ao diesel.</p>
+            </div>
+            <div class="blocofato">
+                <span class="etiFa">FATO</span>
+                <p>Os novos motores elétricos e a biometano usam energia limpa e resíduos da própria fazenda, reduzindo a emissão de carbono a zero.</p>
+            </div>
+        </div>
+
+        <div class="cardM">
+            <div class="blocomito">
+                <span class="etiMi">MITO</span>
+                <p>Aumentar a produção de alimentos exige desmatar mais terras.</p>
+            </div>
+            <div class="blocofato">
+                <span class="etiFa">FATO</span>
+                <p>Com drones, inteligência artificial e sensores IoT, o produtor aumenta a eficiência na mesma área, preservando os recursos naturais.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="linhat">
+    <h1 class="tlinha">A Evolução do Campo</h1>
+    <div class="linhas">
+        <div class="lPa" data-aos="fade-right" data-aos-delay="1000">
+            <h2 class="tpa">Passado</h2>
+            <img src="trator.png" alt="Trator Antigo" class="imglinha">
+            <ul class="topicos">
+                <li>Dominado por práticas tradicionais</li>
+                <li>Uso intensivo de mão de obra e animais</li>
+                <li>Baixa eficiência e produtividade</li>
+                <li>Dependência de condições climáticas</li>
+                <li>Desmatamento para expansão agrícola</li>
+                <li>Maquinários mais poluentes</li>
+            </ul>
+        </div>
+<div class="lPre" data-aos="fade-left" data-aos-delay="700">
+            <h2 class="tp">Presente</h2>
+            <img src="trator2.png" alt="Trator Moderno" class="imglinha">
+            <ul class="topicos">
+                <li>Integração de tecnologia e inovação</li>
+                <li>Uso de drones, sensores e IA para monitoramento</li>
+                <li>Tratores elétricos e biometano para sustentabilidade</li>
+                <li>Agricultura de precisão para eficiência</li>
+                <li>Redução do impacto ambiental</li>
+                <li>Conexão com o mercado global</li>
+            </ul>
+        </div>
+        
+
+
+    </div>
+    
+</div>
+<div class="resumevo" data-aos="fade-up" data-aos-delay="500">
+     <h2 class="tresumo"> A tecnologia transforma a terra, a inovação alimenta o futuro. </h2>
+    <p class="resum">A evolução do campo vai muito além das máquinas: ela mostra como a inteligência e a sustentabilidade transformaram a produção de alimentos. Do trabalho braçal e da tração animal do passado até a precisão dos tratores autônomos, drones e sensores do presente, o agro se modernizou para produzir mais respeitando o meio ambiente. Conectar a tradição da terra com a tecnologia de ponta é o que garante o desenvolvimento e o futuro do nosso planeta.</p>
+    
+    </div>
+    
+    <script src="app.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+<footer class="rodape">
+    <p>&copy; 2026 AgroNext - Projeto Agrinho. Desenvolvido com orgulho.</p>
+</html>
